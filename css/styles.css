@@ -1,3 +1,6 @@
+.hide {
+  display: none;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -21,12 +24,35 @@ img {
   height: auto;
 }
 .container {
-  width: 1158px;
-  padding: 0 15px;
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
+ 
+  outline: 1px solid red;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .container {
+  max-width: 1158px;
+  padding: 0 15px;
+  }
 }
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 96px 0;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
 }
 /*#region header*/
 
@@ -265,8 +291,23 @@ section.hero > .container {
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+    gap: 72px;
   /* justify-content: space-between; */
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+      flex-wrap: wrap;
+      gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
 }
 .team-item {
   background-color: #ffffff;

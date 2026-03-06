@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header" id="header">
+    <header class="hide header" id="header">
       <div class="container">
         <nav class="navy">
           <a class="logo" href="./index.html"
@@ -58,14 +58,14 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hide">
           <div class="hero-wrapper">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button class="btn hero-button" type="button">Order Service</button>
           </div>
         </div>
       </section>
-      <section class="features section">
+      <section class="features section hide">
         <div class="container">
           <h2 class="visually-hidden">Our Features</h2>
           <ul class="features-list">
@@ -375,7 +375,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio section">
+      <section class="portfolio section hide">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -497,7 +497,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="hide">
       <div class="container">
         <div class="footer-left">
           <a class="logo" href="./index.html"
@@ -564,8 +564,9 @@
         <div class="footer-right">
           <form class="footer-form">
             <div class="footer-form-wrapper">
-            <label class="footer-form-label" for="footer-email"
-              >Subscribe</label>
+              <label class="footer-form-label" for="footer-email"
+                >Subscribe</label
+              >
               <input
                 class="footer-form-input"
                 name="footer-email"
@@ -584,7 +585,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal" id="modal">
         <button
           class="modal-close-button"
