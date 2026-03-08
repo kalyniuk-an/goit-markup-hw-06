@@ -22,12 +22,17 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="hide header" id="header">
+    <header class="header" id="header">
       <div class="container">
         <nav class="navy">
           <a class="logo" href="./index.html"
             >Web<span class="logo-dark">Studio</span></a
           >
+          <button class="mobile-menu-button" type="button">
+            <svg class="mobile-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul class="menu-list">
             <li class="menu-item">
               <a class="menu active" href="#">Studio</a>
@@ -65,7 +70,7 @@
           </div>
         </div>
       </section>
-      <section class="features section hide">
+      <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Our Features</h2>
           <ul class="features-list">
@@ -126,6 +131,8 @@
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="./images/mark-guerrero.jpg 1x,
+                  ./images/mark-guerrero@2x.jpg 2x"
                 src="./images/mark-guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -188,6 +195,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/tom-ford.jpg    1x,
+                  ./images/tom-ford@2x.jpg 2x
+                "
                 src="./images/tom-ford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -250,6 +261,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/camila-garcia.jpg    1x,
+                  ./images/camila-garcia@2x.jpg 2x
+                "
                 src="./images/camila-garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -312,6 +327,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/daniel-wilson.jpg    1x,
+                  ./images/daniel-wilson@2x.jpg 2x
+                "
                 src="./images/daniel-wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -375,7 +394,7 @@
           </ul>
         </div>
       </section>
-      <section class="portfolio section hide">
+      <section class="portfolio section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -497,7 +516,7 @@
         </div>
       </section>
     </main>
-    <footer class="hide">
+    <footer class="hw-footer">
       <div class="container">
         <div class="footer-left">
           <a class="logo" href="./index.html"
@@ -680,5 +699,93 @@
         </form>
       </div>
     </div>
+    <!-- mobile menu -->
+    <div class="mobile-menu">
+      <button
+        class="mobile-menu-close-button"
+        type="button"
+        aria-label="Close mobile menu button"
+      >
+        <svg class="mobile-menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link active" href="#">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Contacts</a>
+        </li>
+      </ul>
+      <address>
+        <ul class="mobile-contacts-list">
+          <li class="mobile-contacts-item">
+            <a class="mobile-contacts accent-text" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-contacts-item">
+            <a class="mobile-contacts" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="socials-list">
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://www.twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a
+            class="socials-link"
+            href="https://www.linkedin.com/in"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- end mobile menu -->
   </body>
 </html>
