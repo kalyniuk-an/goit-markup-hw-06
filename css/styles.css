@@ -186,6 +186,13 @@ img {
   border-radius: 2px;
   background-color: #404BBF;
 }
+
+@media only screen and (max-width: 767px) {
+  .header .header-address {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .header .contacts-list {
     display: none;
@@ -322,7 +329,7 @@ section.hero{
 }
 @media only screen and (min-width: 768px) {
 .hero-wrapper {
-  max-width: 469px;
+  max-width: 468px;
   gap: 36px;
   padding-top: 112px;
   padding-bottom: 112px;
@@ -805,16 +812,17 @@ section.hero{
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1158px) {
-  .footer-wrap{
-    padding-left: 109px ;
-  }
+  /* .footer-wrap{  padding-left: 109px ; } */
+    .hw-footer .container{
+      display: flex;
+      justify-content: center;
+    }
 }
  @media only screen and (min-width: 1158px) {
    .footer-wrap{
- 
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-between;
+    /* justify-content: space-between; */
    }
  }
 
@@ -907,6 +915,11 @@ section.hero{
 .footer-right {
   align-items: baseline;
 }
+@media only screen and (min-width: 1158px) {
+  .footer-right {
+    margin-right: auto;
+  }
+}
 }
 .footer-form{
   display: flex;
@@ -914,7 +927,6 @@ section.hero{
   gap: 16px;
   align-items: center;
   /* display: flex;
- 
   gap:24px;
   align-items: flex-end; */
 }
@@ -925,27 +937,16 @@ section.hero{
     gap: 24px;
   }
 }
-/* 
-@media only screen and (min-width: 769px) {
-  .footer-form {
-      display: flex;
-  
-      gap: 24px;
-      align-items: flex-end;
-    }
-} */
+
 .footer-form-wrapper {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
-  /* margin-bottom: 16px; */
-  /* justify-content: center;*/
 }
+
 .footer-form-label{
   display: block;
-  
-  /* width: 264px; */
   
   font-weight: 500;
   font-size: 16px;
