@@ -141,14 +141,14 @@ img {
   color: #404bbf;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
    .header .menu-list {
     display: none;
   }
 }
 
 /*  */
-@media only screen and (min-width: 1158px)  {
+@media only screen and (min-width: 1158px) {
   .menu-list {
   display: flex;
   gap: 40px;
