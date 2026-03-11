@@ -99,6 +99,10 @@ img {
     /* justify-content: space-between; */
   }
 }
+.navy .logo{
+  display: inline-block;
+  padding: 16px 0;
+}
 .logo {
   color: #4D5AE5;
   font-family: Raleway, sans-serif;
@@ -1316,6 +1320,7 @@ section.hero{
   visibility: visible;
   pointer-events: initial;
   transition-delay: 0ms;
+  padding: 0 16px;
 }
 
 .mobile-wrapper {
@@ -1442,7 +1447,7 @@ section.hero{
   color: #404bbf;
 }
 
-.mobile-wrapper ,.socials-link{
+.mobile-wrapper .socials-link{
   padding: 0;
 }
 /*#endregion mobile menu*/
