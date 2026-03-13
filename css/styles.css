@@ -876,6 +876,12 @@ section.hero{
   color: #f4f4fd;
   margin: 0 auto 16px;
 }
+@media only screen and (min-width: 768px) {
+  .socials-description{
+    margin: auto 0 16px;
+  }
+}
+
 .socials-list {
   display: flex;
   gap: 16px;
